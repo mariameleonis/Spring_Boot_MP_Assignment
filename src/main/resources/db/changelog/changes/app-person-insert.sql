@@ -1,0 +1,16 @@
+INSERT INTO person (name, email) VALUES
+                                     ('John Doe', 'john.doe@example.com'),
+                                     ('Jane Smith', 'jane.smith@example.com'),
+                                     ('Michael Johnson', 'michael.johnson@example.com'),
+                                     ('Emily Davis', 'emily.davis@example.com'),
+                                     ('David Brown', 'david.brown@example.com'),
+                                     ('Sarah Wilson', 'sarah.wilson@example.com'),
+                                     ('Daniel Taylor', 'daniel.taylor@example.com'),
+                                     ('Olivia Anderson', 'olivia.anderson@example.com'),
+                                     ('James Miller', 'james.miller@example.com'),
+                                     ('Sophia Thomas', 'sophia.thomas@example.com'),
+                                     ('Alexander Clark', 'alexander.clark@example.com'),
+                                     ('Emma Walker', 'emma.walker@example.com'),
+                                     ('Liam Lewis', 'liam.lewis@example.com'),
+                                     ('Mia Harris', 'mia.harris@example.com'),
+                                     ('William Young', 'william.young@example.com');
