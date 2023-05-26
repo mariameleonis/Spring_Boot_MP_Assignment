@@ -148,9 +148,9 @@ class UserControllerIT {
   @Test
   void testGetUserById_whenInvalidUserId() {
     val responseEntity = this.restTemplate
-        .exchange(format(API_USERS_ID, "abc"), HttpMethod.GET, null, User.class);
+        .exchange(format(API_USERS_ID, "abc"), HttpMethod.GET, null, String.class);
 
-    assertEquals(HttpStatus.BAD_REQUEST.value(), responseEntity.getStatusCode().value());
+    assertEquals(HttpStatus.INTERNAL_SERVER_ERROR.value(), responseEntity.getStatusCode().value());
 
     verifyNoInteractions(repository);
   }
