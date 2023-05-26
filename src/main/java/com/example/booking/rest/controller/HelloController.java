@@ -9,6 +9,9 @@ public class HelloController {
 
   @GetMapping("/hello")
   public String saySecuredHello(JwtAuthenticationToken jwtAuthenticationToken){
+    if (jwtAuthenticationToken == null) {
+      return "Hello! You are not authenticated.";
+    }
     return "Hello Authenticated User: "+jwtAuthenticationToken.getName();
   }
 }
